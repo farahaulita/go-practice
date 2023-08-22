@@ -40,4 +40,41 @@ func main() {
 
 	var exist bool = true
 	fmt.Printf("exist? %t \n", exist)
+
+	var point = 10
+
+	if point==10{
+		fmt.Println("Nilai Sempurna!")
+	} else if point > 5 {
+		fmt.Println("Lulus")
+	} else {
+		fmt.Println("Tidak Lulus")
+	}
+
+	switch {
+	case (point==10):
+		fmt.Println("Amazing")
+		fallthrough
+
+	case (point > 5):
+		fmt.Println("Pass")
+		fallthrough
+
+	case (point % 2 == 0):
+		fmt.Println("Even")
+	default:
+		fmt.Println("Nope")
+
+	}
+
+	loop()
+
+	
+}
+
+func loop(){
+	for i := 0; i < 5; i++ {
+		fmt.Println("Angka", i)
+	   }
+	   
 }
